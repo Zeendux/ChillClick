@@ -72,3 +72,20 @@
   background-color: #1a174f;
   transition: all ease 200ms;
 }
+
+
+/* ADAPTIVE */
+@media (max-width: 480px) {
+
+.accordionjs .acc_section .acc_head {
+  font-size: 3.5vw;
+  height: auto;
+  padding: 4vw 3vw 4vw 3vw;
+  line-height: 1.2;
+  
+}
+
+  .accordionjs .acc_section .acc_content {
+    font-size: 3vw;
+  }
+}

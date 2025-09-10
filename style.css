@@ -171,6 +171,11 @@ section {
   width: 100%;
 }
 
+.container.faq {
+  display: flex;
+  flex-direction: column;
+}
+
 .first-col {
   display: flex;
   flex-direction: column;
