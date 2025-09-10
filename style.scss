@@ -492,4 +492,37 @@ section.mobile {
   
 }
 }
+
+.container.about {
+  flex-direction: column;
+
+   h3 {
+    margin-right: auto;
+  }
+  
+}
+
+.p-plates-wrap {
+  flex-direction: column;
+
+  .p-plate {
+    width: 100%;
+    height: auto;
+    padding: 10vw 6vw 10vw 6vw;
+    border-radius: $radius-m;
+
+    p {
+    font-size: 3.5vw;
+    }
+  }
+
+ 
+}
+
+h3 {
+  font-size: 6.667vw;
+  margin-bottom: 2vw;
+}
+
+
 }

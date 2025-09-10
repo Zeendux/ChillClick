@@ -563,6 +563,28 @@ h4 {
     font-size: 4vw;
   }
   .hero-plate .btn-wrap {
-    padding-bottom: 10.1vw;
+    padding-bottom: 10.2vw;
+  }
+  .container.about {
+    flex-direction: column;
+  }
+  .container.about h3 {
+    margin-right: auto;
+  }
+  .p-plates-wrap {
+    flex-direction: column;
+  }
+  .p-plates-wrap .p-plate {
+    width: 100%;
+    height: auto;
+    padding: 10vw 6vw 10vw 6vw;
+    border-radius: 10vw;
+  }
+  .p-plates-wrap .p-plate p {
+    font-size: 3.5vw;
+  }
+  h3 {
+    font-size: 6.667vw;
+    margin-bottom: 2vw;
   }
 }/*# sourceMappingURL=style.css.map */
