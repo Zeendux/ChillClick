@@ -1,0 +1,44 @@
+@use 'variables.scss' as *;
+
+.menu-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: $plates-gap;
+  width: 100%;
+  height: auto;
+  padding-bottom: 0.833vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 5.833vw;
+
+  @media (max-width: $bp-sm) {
+    width: 17.833vw;
+  }
+}
+
+
+.burger-button {
+  background-color: $purple;
+  width: 4.167vw;
+  height: 4.167vw;
+  display: flex;
+  justify-content: center;
+  border-radius: $radius;
+
+  @media (max-width: $bp-sm) {
+    width: 10.167vw;
+    height: 10.167vw;
+  }
+
+  .burger-icon {
+    width: 2.083vw;
+
+    @media (max-width: $bp-sm) {
+      width: 5.167vw;
+      
+  }
+  }
+}

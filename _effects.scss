@@ -1,0 +1,14 @@
+@use 'variables.scss' as *;
+
+::-moz-selection {
+  // выделение
+  /* Code for Firefox */
+  color: $white;
+  background: $purple;
+}
+
+::selection {
+  // выделение
+  color: $white;
+  background: $purple;
+}

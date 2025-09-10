@@ -1,0 +1,495 @@
+@use 'resetstyles.scss' as *;
+@use 'variables.scss' as *;
+
+@use 'effects.scss' as *;
+@use 'header.scss' as *;
+@use 'about.scss' as *;
+
+body {
+  background-color: $background;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  padding: 0.5vw 1.3vw 1.3vw 1.3vw;
+  color: $black-text;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6.667vw;
+  padding-bottom: 6.667vw;
+
+  @media (max-width: $bp-sm) {
+    padding-top: 0%;;
+  }
+}
+
+#hero{
+  padding-top: 0;
+  padding-bottom: 6.667vw;
+  
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: $plates-gap;
+  width: 100%;
+
+  
+}
+
+
+
+.first-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 8.333vw;
+  line-height: 84%;
+  width: 68.25vw;
+  letter-spacing: 0.3vw;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 6.667vw;
+  line-height: 86%;
+  height: auto;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 4.167vw;
+  line-height: 84%;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 900;
+  
+}
+
+.plates-row {
+  display: flex;
+  flex-direction: row;
+  gap: $plates-gap;
+}
+
+.green {
+  background-color: $green;
+  width: 25vw;
+  height: 28.583vw;
+  border-radius: $radius;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0, $padding, $padding, $padding;
+}
+
+.lottie {
+  width: 20.25vw;
+  height: auto;
+}
+
+.hero-plate {
+  background-color: $purple;
+
+  border-radius: $radius;
+  color: $white;
+  padding: 2.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  p {
+    font-size: 1.5vw;
+  }
+
+  h2 {
+    width: 40vw;
+    height: 11.5vw;
+  }
+}
+
+// purple plate
+.hero-plate-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.417vw;
+}
+
+.btn-wrap {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+button {
+  font-weight: 900;
+  width: 20vw;
+  height: 4.5vw;
+  border-radius: 3.667vw;
+  border: 0;
+  background-color: $white;
+  font-size: $btn-text;
+
+
+}
+
+button.social {
+  width: 4.5vw;
+  height: 4.5vw;
+  border-radius: 3.667vw;
+  border: 0;
+  background-color: $white;
+  display: flex;
+  
+  justify-content: center;
+  
+  .icon {
+    width: 2.5vw;
+    padding-right: .2vw;
+  }
+
+  
+
+}
+
+
+
+/*
+button:hover {
+  background-color: #1a174f;
+  color: white;
+  transition: all ease 200ms;
+}
+*/
+
+.second-col {
+  background-color: $orange;
+  width: 25vw;
+  height: 42.917vw;
+  border-radius: $radius;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: $padding $padding 0 $padding;
+  .lottie {
+    width: 20.25vw;
+    height: auto;
+  }
+}
+
+.orange-text {
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  line-height: 2.5vw;
+  font-size: 1.5vw;
+  align-self: flex-start;
+  margin-bottom: auto;
+}
+
+.purple-h {
+  color: #6f00ff;
+}
+
+.serv {
+  width: 38.667vw;
+}
+
+.h3-and-btn-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h4 {
+  font-size: 2.5vw;
+  font-weight: 900;
+  line-height: 84%;
+}
+
+.learn-more-btn {
+  width: 54.167vw;
+  height: 8.167vw;
+  background-color: $black-text;
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5vw;
+  border-radius: $radius;
+
+  .arrow {
+    width: 3.5vw;
+  }
+}
+
+.services {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.services-content-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.services-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.833vw;
+  align-items: end;
+}
+
+.card {
+  height: 11.667vw;
+  border-radius: $radius;
+  background-color: $full-blue;
+  color: $white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  h4 {
+    padding: 0 0 0 2.5vw;
+  }
+}
+
+.first-card {
+  width: 77.25vw;
+}
+
+.second-card {
+  width: 71.417vw;
+  background-color: $blue;
+}
+
+.third-card {
+  width: 65.583vw;
+  background-color: $purple;
+}
+
+.service-card-img {
+  width: 31.417vw;
+}
+
+.brand-img {
+  position: relative;
+  top: 3vw;
+  right: 4vw;
+  width: 30vw;
+}
+
+.lottie {
+  will-change: transform;
+}
+
+.contact-plate {
+  background-color: $purple;
+
+  border-radius: $radius;
+  color: $white;
+  padding: 2.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 5vw;
+  gap: 2.08vw;
+
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .btn-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row-reverse;
+  gap: 1vw;
+}
+}
+
+.contact {
+  justify-content: space-between;
+}
+
+.second-col-no-fill {
+  background-color: transparent;
+  width: 25vw;
+  height: auto;
+  border-radius: $radius;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: flex-end;
+  padding: $padding 0 0 $padding;
+  .lottie {
+    width: 20.25vw;
+    height: auto;
+  }
+}
+
+.green-h {
+  color: $green;
+}
+
+
+
+
+// ADAPTIVE 
+
+
+section.desktop {
+
+@media (max-width: $bp-sm) {
+    display: none; // отключение desktop версии на мобилке
+  }
+
+}
+
+section.mobile {
+
+@media (min-width: $bp-sm) {
+    display: none; // отключение mobile версии на десктопе
+  }
+
+}
+
+
+.container.mobile {
+    flex-direction: column;
+    h1 {
+      margin-bottom: 2vw;
+    }
+  }
+
+  
+
+.two-men {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2vw;
+
+}
+
+
+  .orange {
+  background-color: $orange;
+  width:43vw;
+  height: 55.583vw;
+  border-radius: $radius-m;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0, $padding, $padding, $padding;
+  flex-grow: 1;
+}
+
+.green {
+  @media (max-width: $bp-sm) {
+    width: 43vw;
+    height: 55.583vw;
+  border-radius: $radius-m;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0, $padding, $padding, $padding;
+  flex-grow: 1;
+  }
+}
+
+@media (max-width: $bp-sm) {
+
+  .splide {
+    display: none;
+  }
+
+  body {
+    padding: 3vw 3vw 3vw 3vw;
+  }
+
+  .menu-wrap {
+    padding-bottom: 4vw;
+  }
+
+  h1 {
+    font-size: 12vw;
+    text-align: center;
+    width: 100%;
+  }
+
+  .lottie {
+  width: 38.25vw;
+  height: auto;
+}
+
+  
+
+  .hero-plate {
+  background-color: $purple;
+
+  border-radius: $radius-m;
+  color: $white;
+  padding: $padding-m;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  p {
+    font-size: 3.5vw;
+  }
+
+  h2 {
+    width: auto;
+    height: auto;
+    font-size: 15vw;
+  }
+
+
+  button {
+  font-weight: 900;
+  width: 55vw;
+  height: 14.5vw;
+  border-radius: $radius-m;
+  border: 0;
+  background-color: $white;
+  font-size: $btn-text-m;
+
+
+}
+
+.btn-wrap {
+  padding-bottom: 10vw;
+  
+}
+}
+}

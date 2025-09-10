@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "accordionjs": "^2.1.2"
+  }
+}

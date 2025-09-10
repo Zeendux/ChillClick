@@ -1,0 +1,35 @@
+@use 'variables.scss' as *;
+.about {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-plate {
+  width: 31.667vw;
+  height: 19.667vw;
+  padding: 0 2.5vw 0 2.5vw;
+  border-radius: $radius;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    font-size: 1.5vw;
+    line-height: 120%;
+    color: $white;
+  }
+}
+
+.p-plates-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: $plates-gap;
+}
+
+.blue-bg {
+  background-color: $blue;
+}
+
+.purple-bg {
+  background-color: $purple;
+}

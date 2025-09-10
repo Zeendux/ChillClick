@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chill Click</title>
+    <link rel="stylesheet" href="style.scss" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="splide/dist/css/splide.min.css">
+
+    <link rel="stylesheet" href="accordion.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.2.3/dist/lenis.css"
+    />
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="splide/dist/js/splide.min.js"></script>
+    
+
+  </head>
+  
+    <!-- HEADER -->
+    <header>
+      <div class="menu-wrap">
+        <img class="logo" src="assets\LOGO.svg" alt="logo" />
+        <div class="burger-button">
+          <img class="burger-icon" src="assets\burger.svg" />
+        </div>
+      </div>
+    </header>
+    <!-- HERO -->
+    <section class="desktop" id="hero" >
+      <div class="container">
+        <div class="first-col">
+          <h1>TRANSFORM YOUR BRAND</h1>
+          <div class="plates-row">
+            <div class="green">
+              <div id="green-lottie" class="lottie"></div>
+            </div>
+            <div class="hero-plate">
+              <div class="btn-wrap">
+                <button id="copyBtn" data-text="Пример текста для копирования">
+                  GET STARTED
+                </button>
+              </div>
+              <div class="hero-plate-text">
+                <p>WITH OUR</p>
+                <h2>DESIGN STUDIO.</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="second-col">
+          <p class="orange-text">
+            with our<br />expert<br />design<br />solutions!
+          </p>
+          <div id="orange-lottie" class="lottie"></div>
+        </div>
+      </div>
+    </section>
+    <section class="mobile" id="hero" >
+      <div class="container mobile">
+        <h1>TRANSFORM YOUR BRAND</h1>
+
+        <div class="two-men">
+          <div class="green">
+              <div id="green-lottie-m" class="lottie"></div>
+          </div>
+
+          <div class="orange mobile">
+          <div id="orange-lottie-m" class="lottie"></div>
+          </div>
+        </div>
+
+        <div class="hero-plate">
+              <div class="btn-wrap">
+                <button id="copyBtn" data-text="Пример текста для копирования">
+                  GET STARTED
+                </button>
+              </div>
+              <div class="hero-plate-text">
+                <p>WITH OUR</p>
+                <h2>DESIGN STUDIO.</h2>
+              </div>
+            </div>
+
+
+        
+        
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container about">
+        <h3>ABOUT <span class="purple-h">US</span></h3>
+        <div class="p-plates-wrap">
+          <div class="p-plate blue-bg">
+            <p>
+              We create thoughtful and functional design that reflects brand
+              values and addresses business objectives.
+            </p>
+          </div>
+          <div class="p-plate purple-bg">
+            <p>
+              Our team specializes in UX/UI design, brand design, and website
+              development on Tilda and Webflow, offering comprehensive digital
+              solutions for businesses of all sizes.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="h3-and-btn-wrap">
+          <h3 class="serv">
+            Let’s see what <span class="purple-h">we can do</span>
+          </h3>
+          <div class="learn-more-btn">
+            <h4>LEARN MORE</h4>
+            <img class="arrow" src="assets\Arrow.svg" alt="arrow" />
+          </div>
+        </div>
+        <div class="services-content-wrap">
+          <div id="green-lottie-2" class="lottie"></div>
+          <div class="services-cards">
+            <div class="card first-card">
+              <h4>WEB<br />DESIGN / DEV</h4>
+              <img
+                class="service-card-img"
+                src="assets\laptop.svg"
+                alt="laptop"
+              />
+            </div>
+            <div class="card second-card">
+              <h4>UI/UI<br />DESIGN</h4>
+              <img
+                class="service-card-img"
+                src="assets\phones.svg"
+                alt="phones"
+              />
+            </div>
+            <div class="card third-card">
+              <h4>BRAND<br />DESIGN</h4>
+              <img
+                class="service-card-img brand-img"
+                src="assets\bran.svg"
+                alt="brand"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SLIDER / WORKS -->
+<section class="splide" aria-label="Splide Basic HTML Example">
+  <div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">Slide 01</li>
+			<li class="splide__slide">Slide 02</li>
+			<li class="splide__slide">Slide 03</li>
+		</ul>
+  </div>
+  
+  
+
+</section>
+
+<section class="splide" aria-label="Basic Structure Example">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">Slide 01</li>
+      <li class="splide__slide">Slide 02</li>
+      <li class="splide__slide">Slide 03</li>
+    </ul>
+  </div>
+</section>
+
+    <!-- FAQ -->
+     <section id="faq">
+      <div class="container">
+        <ul id="my-accordion" class="accordionjs">
+      <!-- Section 1 -->
+      <li>
+        <div>WHY SHOULD I CHOOSE YOUR STUDIO?</div>
+        <div>
+          <!-- Section content here. -->
+          We create unique and user-friendly solutions focused on our clients'
+          business needs. We work with modern tools, follow trends and guarantee
+          high-quality results
+        </div>
+      </li>
+
+      <!-- Section 2 -->
+      <li>
+        <div>WHAT IS THE MINIMUM BUDGET TO WORK WITH YOU?</div>
+        <div>
+          <!-- Section content here. -->
+          The minimum budget depends on the type of project. For landings, the price starts from $400, for more complex projects the cost is discussed individually
+        </div>
+      </li>
+
+      <!-- Section 3 -->
+      <li>
+        <div>HOW IS THE PAYMENT GOING?</div>
+        <div>
+          <!-- Section content here. -->
+          We work on prepayment:<br>
+- 50% – before the start of the project.<br>
+- 50% – after completion of work and before transfer of materials
+        </div>
+      </li>
+    </ul>
+      </div>
+     </section> 
+
+
+     <!-- LET'S TALK ABOUT YOUR CHILL PROJECT -->
+     <section id="let's">
+      <div class="container contact">
+        <div class="contact-plate">
+          <h3>LET’S TALK ABOUT<br><span class="green-h">YOUR CHILL PROJECT</span></h3>
+          <p>FILL OUT THE CONTACT FORM<br>
+OR CONTACT US DIRECTLY</p>
+              <div class="btn-wrap">
+                <button class="social">
+                  <svg class="icon"  viewBox="0 0 29 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M28.4591 0.902041L23.9575 24.4034C23.9575 24.4034 23.3276 26.0328 21.5973 25.2513L11.2108 17.0044L11.1626 16.9801C12.5656 15.6756 23.4449 5.54602 23.9204 5.08688C24.6564 4.37576 24.1995 3.95242 23.3449 4.48959L7.27476 15.0578L1.07491 12.8976C1.07491 12.8976 0.0992437 12.5383 0.00538154 11.7567C-0.0897154 10.974 1.10702 10.5507 1.10702 10.5507L26.3818 0.283015C26.3818 0.283015 28.4591 -0.662153 28.4591 0.902041Z" fill="currentColor"/>
+</svg>
+                </button>
+                <button id="" data-text="Пример текста для копирования">
+                  GET STARTED
+                </button>
+                
+              </div>
+        </div>
+        
+        <div class="second-col-no-fill">
+          <div id="orange-lottie-2" class="lottie"></div>
+        </div>
+      </div>
+     </section>
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.12.2/build/player/lottie.min.js"></script>
+
+    <script src="scripts/lottie.js"></script>
+    <script src="scripts/clipboard.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    
+
+    <script src="scripts/accordion.min.js"></script>
+    <script src="scripts/gsap.js"></script>
+    
+
+    <script>
+      jQuery(document).ready(function ($) {
+        $('#my-accordion').accordionjs();
+      });
+
+      
+    $("#my-accordion").accordionjs({
+        // Allow self close.(data-close-able)
+        closeAble   : true,
+
+        // Close other sections.(data-close-other)
+        closeOther  : true,
+
+        // Animation Speed.(data-slide-speed)
+        slideSpeed  : 250,
+
+        // The section open on first init. A number from 1 to X or false.(data-active-index)
+        activeIndex : 1,
+
+        // Callback when a section is open
+        openSection: function( section ){},
+
+        // Callback before a section is open
+        beforeOpenSection: function( section ){},
+    });
+
+    </script>
+    
+   
+<script>
+
+  document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '.splide', {
+      type   : 'loop',
+  perPage: 3,
+    });
+    splide.mount();
+  } );
+</script>
+    
+   
+  </body>
+</html>

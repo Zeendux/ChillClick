@@ -1,0 +1,74 @@
+.accordionjs {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /*margin-top: 10px;
+   margin-bottom: 20px; */
+  width: 100%;
+}
+.accordionjs .acc_section {
+  position: relative;
+  z-index: 10;
+
+  overflow: hidden;
+}
+.accordionjs .acc_section .acc_head {
+  /* Шапка */
+  position: relative;
+  background: #6f00ff;
+  height: 7vw;
+  /* padding: 5rem; */
+  margin: 0.4vw 0;
+
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 2vw;
+  border-radius: 1000vw;
+  padding-left: 2.5vw;
+}
+.accordionjs .acc_section .acc_head h3 {
+  line-height: 1;
+  /* margin: 5px 0; */
+}
+.accordionjs .acc_section .acc_content {
+  padding: 0.4vw 0 0 0;
+  display: block;
+  font-size: 1.5vw;
+  padding: 3vw;
+  background-color: #4001ff;
+  border-radius: 4.917vw;
+  color: white;
+  padding-right: 23vw;
+}
+/* .accordionjs .acc_section:first-of-type,
+.accordionjs .acc_section:first-of-type .acc_head {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.accordionjs .acc_section:last-of-type,
+.accordionjs .acc_section:last-of-type .acc_content {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+   */
+/* .accordionjs .acc_section.acc_active > .acc_content {
+  display: block;
+  font-size: 1.5vw;
+  padding: 3vw;
+  background-color: #4001ff;
+  border-radius: 4.917vw;
+  color: white;
+  padding-right: 23vw; 
+}*/
+.accordionjs .acc_section.acc_active > .acc_head {
+  background: #1a174f;
+  color: white;
+}
+
+.accordionjs .acc_section .acc_head:hover {
+  background-color: #1a174f;
+  transition: all ease 200ms;
+}
