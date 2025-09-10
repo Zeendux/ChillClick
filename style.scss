@@ -47,6 +47,8 @@ section {
   flex-direction: column;
 }
 
+
+
 .first-col {
   display: flex;
   flex-direction: column;
@@ -487,7 +489,7 @@ section.mobile {
   button {
   font-weight: 900;
   width: 55vw;
-  height: 14.5vw;
+  height: 12.5vw;
   border-radius: $radius-m;
   border: 0;
   background-color: $white;
@@ -507,6 +509,7 @@ section.mobile {
 
    h3 {
     margin-right: auto;
+    
   }
   
 }
@@ -572,6 +575,61 @@ h4 {
   }
 
   
+  }
+
+  .container.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+  .contact-plate {
+    border-radius: $radius-m;
+    p {
+    text-transform: none;
+    line-height: 1;
+    }
+    padding: 10vw 6vw 10vw 6vw;
+
+    .btn-wrap {
+      margin-top: 2vw;
+      gap: 1.5vw;
+    }
+
+  }
+
+  p {
+    font-size: 3.5vw;
+    }
+
+  .all-btn {
+  font-weight: 900;
+        width: 55vw;
+        height: 12.5vw;
+        border-radius: 10vw;
+        border: 0;
+        background-color: white;
+        font-size: 4vw;
+  }
+
+  button.social {
+    width: 12.5vw;
+    height: 12.5vw;
+    border-radius: 100%;
+
+    .icon {
+    width: 7vw;
+  }
+  }
+
+  
+  .second-col-no-fill {
+    width: auto;
+  }
+
+  .second-col-no-fill .lottie {
+    width: 38.25vw;
+
+  }
 
 }

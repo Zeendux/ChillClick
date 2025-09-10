@@ -565,7 +565,7 @@ h4 {
   .hero-plate button {
     font-weight: 900;
     width: 55vw;
-    height: 14.5vw;
+    height: 12.5vw;
     border-radius: 10vw;
     border: 0;
     background-color: white;
@@ -627,5 +627,48 @@ h4 {
   .services-cards .card h4 {
     font-size: 6vw;
     padding: 0;
+  }
+  .container.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-plate {
+    border-radius: 10vw;
+    padding: 10vw 6vw 10vw 6vw;
+  }
+  .contact-plate p {
+    text-transform: none;
+    line-height: 1;
+  }
+  .contact-plate .btn-wrap {
+    margin-top: 2vw;
+    gap: 1.5vw;
+  }
+  p {
+    font-size: 3.5vw;
+  }
+  .all-btn {
+    font-weight: 900;
+    width: 55vw;
+    height: 12.5vw;
+    border-radius: 10vw;
+    border: 0;
+    background-color: white;
+    font-size: 4vw;
+  }
+  button.social {
+    width: 12.5vw;
+    height: 12.5vw;
+    border-radius: 100%;
+  }
+  button.social .icon {
+    width: 7vw;
+  }
+  .second-col-no-fill {
+    width: auto;
+  }
+  .second-col-no-fill .lottie {
+    width: 38.25vw;
   }
 }/*# sourceMappingURL=style.css.map */
