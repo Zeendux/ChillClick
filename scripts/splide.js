@@ -22,3 +22,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
     
     
   } );
+
+
+   console.log('Has Splide?', !!window.Splide);
+  console.log('Has Ext?', window.splide && window.splide.Extensions);
