@@ -23,7 +23,7 @@
     
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="splide/dist/js/splide.min.js"></script>
+    
     
 
   </head>
@@ -181,7 +181,17 @@
 
 </section>
 
-<section class="splide" aria-label="Basic Structure Example">
+<section class="splide first-splide" aria-label="first">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">Slide 01</li>
+      <li class="splide__slide">Slide 02</li>
+      <li class="splide__slide">Slide 03</li>
+    </ul>
+  </div>
+</section>
+
+<section class="splide second-splide" aria-label="second">
   <div class="splide__track">
     <ul class="splide__list">
       <li class="splide__slide">Slide 01</li>
@@ -269,6 +279,11 @@ or contact us directly</p>
     <script src="scripts/accordion.min.js"></script>
     <script src="scripts/gsap.js"></script>
     
+    <script src="splide/dist/js/splide.min.js"></script>
+    
+    <script src="splide/dist/js/splide-extension-auto-scroll.min.js"></script>
+    
+    <script src="scripts/splide.js"></script>
 
     <script>
       jQuery(document).ready(function ($) {
@@ -301,13 +316,7 @@ or contact us directly</p>
    
 <script>
 
-  document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide', {
-      type   : 'loop',
-  perPage: 3,
-    });
-    splide.mount();
-  } );
+  
 </script>
     
    
