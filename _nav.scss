@@ -31,50 +31,25 @@
 
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-    color: var(--color-menu-text)
-}
-
-i {
-    position: relative; 
-    top: 1px;
-}
 
 
 
-nav {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 2em;
-  color: #FFF;
 
-}
+
+
+
+
+
 
 .menu-open-btn {
     cursor: pointer;
 }
 
-h1.header {
-    position: absolute;
-    bottom: 0;
-    padding: 2em;
-    margin: 0.25em;
 
-
-}
 
 .menu-overlay {
     width: 100%;
-    padding: 2em;
+    padding: 3vw;
     background-color: $purple;
     
     position: fixed;
@@ -88,12 +63,7 @@ h1.header {
 
 }
 
-.menu-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1em;
-    color: $purple;
-}
+
 
 .menu-cols {
     display: flex;
