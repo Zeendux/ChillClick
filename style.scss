@@ -1,6 +1,7 @@
 @use 'resetstyles.scss' as *;
 @use 'variables.scss' as *;
 
+@use 'nav.scss' as *;
 @use 'effects.scss' as *;
 @use 'header.scss' as *;
 @use 'about.scss' as *;
@@ -11,6 +12,12 @@ body {
   font-weight: 900;
   
   color: $black-text;
+}
+
+button:hover {
+  background-color: $black-text !important;
+  transition: 200ms;
+  color: white;
 }
 
 section {
@@ -29,12 +36,13 @@ section {
 }
 
 header {
-  padding: 3vw 3vw 3vw 3vw;
+  padding: 1.3vw;
+
 }
 
 
 #hero{
-  padding-top: 0;
+  padding-top: 6.667vw;
   padding-bottom: 6.667vw;
   
 }
@@ -469,6 +477,10 @@ section.mobile {
 
 @media (max-width: $bp-sm) {
 
+  .header {
+    padding: 3vw 3vw 3vw 3vw;
+  }
+
   .projects {
     h3 {
       padding-bottom: 2vw;
@@ -497,6 +509,10 @@ section.mobile {
   padding: 3vw 3vw 3vw 3vw;
   padding-top: 10.667vw;
   padding-bottom: 10.667vw;
+
+  .mobile {
+    padding-top: 12vw;
+  }
   }
 
   .menu-wrap {
@@ -684,3 +700,4 @@ h4 {
   }
 
 }
+

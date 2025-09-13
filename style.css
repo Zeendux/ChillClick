@@ -50,6 +50,80 @@ body {
   background-color: #fff;
 }
 
+.burger-button {
+  transition: 200ms all;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000100000;
+}
+
+.burger-button.burger-active {
+  transition: 200ms all;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-menu-text);
+}
+
+i {
+  position: relative;
+  top: 1px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  color: #FFF;
+}
+
+.menu-open-btn {
+  cursor: pointer;
+}
+
+h1.header {
+  position: absolute;
+  bottom: 0;
+  padding: 2em;
+  margin: 0.25em;
+}
+
+.menu-overlay {
+  width: 100%;
+  padding: 2em;
+  background-color: #6f00ff;
+  position: fixed;
+  z-index: 9998;
+}
+
+.menu-close-btn {
+  cursor: pointer;
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  color: #6f00ff;
+}
+
+.menu-cols {
+  display: flex;
+}
+
+.menu-cols > div {
+  flex: 1;
+}
+
 ::-moz-selection {
   /* Code for Firefox */
   color: white;
@@ -59,6 +133,12 @@ body {
 ::selection {
   color: white;
   background: #6f00ff;
+}
+
+header {
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
 }
 
 .menu-wrap {
@@ -145,6 +225,12 @@ body {
   color: #1a174f;
 }
 
+button:hover {
+  background-color: #1a174f !important;
+  transition: 200ms;
+  color: white;
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -160,11 +246,11 @@ section {
 }
 
 header {
-  padding: 3vw 3vw 3vw 3vw;
+  padding: 1.3vw;
 }
 
 #hero {
-  padding-top: 0;
+  padding-top: 6.667vw;
   padding-bottom: 6.667vw;
 }
 
@@ -554,6 +640,9 @@ section.projects h3 {
 }
 
 @media (max-width: 480px) {
+  .header {
+    padding: 3vw 3vw 3vw 3vw;
+  }
   .projects h3 {
     padding-bottom: 2vw;
   }
@@ -574,6 +663,9 @@ section.projects h3 {
     padding: 3vw 3vw 3vw 3vw;
     padding-top: 10.667vw;
     padding-bottom: 10.667vw;
+  }
+  section .mobile {
+    padding-top: 12vw;
   }
   .menu-wrap {
     padding-bottom: 4vw;

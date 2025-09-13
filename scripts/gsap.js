@@ -27,6 +27,8 @@ buttons.forEach(function (button, index) {
 
 */
 
+
+/*
 const buttons = document.querySelectorAll('button');
 
 gsap.defaults({ duration: 0.2 });
@@ -46,3 +48,58 @@ buttons.forEach(btn => {
     tl.reverse();
   });
 });
+*/
+
+
+
+
+// NAV 
+
+const burger = document.querySelector(".burger-button");
+
+const logo = document.querySelector(".logo");
+
+document.addEventListener("DOMContentLoaded", () => {
+  let tl = gsap.timeline({paused: true});
+
+  tl.from (".menu-overlay", {
+    yPercent: -100,
+    duration: .5,
+    
+    ease: "power2.out",
+  })
+    .to (logo, {
+    duration: .2,
+    ease: "power2.out",
+    opacity: 0,
+  }, 0)
+
+
+
+burger.addEventListener("click", () => {
+    console.log("clicked")
+
+    
+
+    if (!burger.classList.contains("burger-active")) {
+        burger.classList.add("burger-active") // Добавить класс active, если он не содержится в списке классов
+      tl.play()
+
+    } else {
+        burger.classList.remove("burger-active") // Удалить класс active, если содержится в списке классов
+        tl.reverse()
+      }
+});
+
+
+
+
+
+// DOMloaded
+});
+
+
+
+
+
+
