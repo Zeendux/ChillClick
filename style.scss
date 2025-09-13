@@ -9,7 +9,7 @@ body {
   background-color: $background;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  padding: 0.5vw 1.3vw 1.3vw 1.3vw;
+  
   color: $black-text;
 }
 
@@ -17,13 +17,21 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 1.3vw 0 1.3vw;
   padding-top: 6.667vw;
   padding-bottom: 6.667vw;
+
+  
 
   @media (max-width: $bp-sm) {
     padding-top: 0%;;
   }
 }
+
+header {
+  padding: 0.5vw 1.3vw 1.3vw 1.3vw;
+}
+
 
 #hero{
   padding-top: 0;
@@ -369,6 +377,32 @@ h4 {
 
 
 
+.case {
+  object-fit: cover;
+    width: 100%;
+    height: 100% !important;
+    border-radius: $radius;
+    object-fit: cover;
+  }
+
+.splide, .splide__track { overflow: hidden; }
+
+.splide__slide {
+  border-radius: $radius;
+  height: 21vw !important;
+  
+}
+
+section.projects {
+  padding-left: 0;
+  padding-right: 0;
+  gap: 1vw;
+
+  h3 {
+    margin-bottom: 1vw;
+  }
+}
+
 // ADAPTIVE 
 
 
@@ -436,14 +470,30 @@ section.mobile {
 @media (max-width: $bp-sm) {
 
   .splide {
-    display: none;
+   
+
   }
 
+  .splide__slide {
+  border-radius: $radius-m;
+  height: 33vw !important;
+  
+}
+
+.first-splide {
+  margin-bottom: .5vw;
+}
+
+.second-splide {
+  margin-top: .5vw;
+}
+
   body {
-    padding: 3vw 3vw 3vw 3vw;
+   
   }
 
   section {
+  padding: 3vw 3vw 3vw 3vw;
   padding-top: 10.667vw;
   padding-bottom: 10.667vw;
   }
