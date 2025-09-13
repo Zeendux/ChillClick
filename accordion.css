@@ -78,14 +78,16 @@
 @media (max-width: 480px) {
 
 .accordionjs .acc_section .acc_head {
-  font-size: 3.5vw;
+  font-size: clamp(3.5vw, 14px, 14px);
   height: auto;
   padding: 4vw 3vw 4vw 3vw;
   line-height: 1.2;
-  
+  padding: 6vw;
 }
 
   .accordionjs .acc_section .acc_content {
-    font-size: 3vw;
+    font-size: clamp(3vw, 14px, 14px);
+    padding: 6vw;
   }
+  
 }

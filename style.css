@@ -160,7 +160,7 @@ section {
 }
 
 header {
-  padding: 0.5vw 1.3vw 1.3vw 1.3vw;
+  padding: 3vw 3vw 3vw 3vw;
 }
 
 #hero {
@@ -597,7 +597,7 @@ section.projects h3 {
     justify-content: space-between;
   }
   .hero-plate p {
-    font-size: 3.5vw;
+    font-size: clamp(3.5vw, 14px, 14px);
   }
   .hero-plate h2 {
     width: auto;
@@ -632,7 +632,7 @@ section.projects h3 {
     border-radius: 10vw;
   }
   .p-plates-wrap .p-plate p {
-    font-size: 3.5vw;
+    font-size: clamp(3.5vw, 14px, 14px);
   }
   h3 {
     font-size: 6.667vw;
@@ -667,7 +667,7 @@ section.projects h3 {
     padding-left: 6vw;
   }
   .services-cards .card h4 {
-    font-size: 6vw;
+    font-size: clamp(6vw, 18px, 18px);
     padding: 0;
   }
   .container.contact {
@@ -688,7 +688,7 @@ section.projects h3 {
     gap: 1.5vw;
   }
   p {
-    font-size: 3.5vw;
+    font-size: clamp(3.5vw, 14px, 14px);
   }
   .all-btn {
     font-weight: 900;

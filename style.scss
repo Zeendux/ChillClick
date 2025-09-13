@@ -29,7 +29,7 @@ section {
 }
 
 header {
-  padding: 0.5vw 1.3vw 1.3vw 1.3vw;
+  padding: 3vw 3vw 3vw 3vw;
 }
 
 
@@ -527,7 +527,7 @@ section.mobile {
   justify-content: space-between;
 
   p {
-    font-size: 3.5vw;
+    font-size: clamp(3.5vw, 14px, 14px);
   }
 
   h2 {
@@ -575,7 +575,7 @@ section.mobile {
     border-radius: $radius-m;
 
     p {
-    font-size: 3.5vw;
+    font-size: clamp(3.5vw, 14px, 14px);
     }
   }
 
@@ -620,7 +620,7 @@ h4 {
     border-radius: $radius-m;
     padding-left: 6vw;
     h4 {
-      font-size: 6vw;
+      font-size: clamp(6vw, 18px, 18px);
       padding: 0;
     }
   }
@@ -650,7 +650,7 @@ h4 {
   }
 
   p {
-    font-size: 3.5vw;
+    font-size: clamp(3.5vw, 14px, 14px);
     }
 
   .all-btn {
