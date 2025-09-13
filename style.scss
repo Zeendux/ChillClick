@@ -469,14 +469,11 @@ section.mobile {
 
 @media (max-width: $bp-sm) {
 
-  .splide {
-   
-
-  }
+  
 
   .splide__slide {
   border-radius: $radius-m;
-  height: 33vw !important;
+  height: 64vw !important;
   
 }
 
@@ -488,9 +485,9 @@ section.mobile {
   margin-top: .5vw;
 }
 
-  body {
-   
-  }
+.case {
+  border-radius: $radius-m;
+}
 
   section {
   padding: 3vw 3vw 3vw 3vw;

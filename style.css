@@ -556,13 +556,16 @@ section.projects h3 {
 @media (max-width: 480px) {
   .splide__slide {
     border-radius: 10vw;
-    height: 33vw !important;
+    height: 64vw !important;
   }
   .first-splide {
     margin-bottom: 0.5vw;
   }
   .second-splide {
     margin-top: 0.5vw;
+  }
+  .case {
+    border-radius: 10vw;
   }
   section {
     padding: 3vw 3vw 3vw 3vw;
