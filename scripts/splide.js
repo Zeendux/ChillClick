@@ -4,7 +4,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
       
     perPage: 3,
     breakpoints: {
-		640: {
+		480: {
 			perPage: 1,
       gap: '10px',
 		},
@@ -29,7 +29,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
       
     perPage: 3,
     breakpoints: {
-		640: {
+		480: {
 			perPage: 1,
       gap: '10px',
 		},

@@ -469,7 +469,11 @@ section.mobile {
 
 @media (max-width: $bp-sm) {
 
-  
+  .projects {
+    h3 {
+      padding-bottom: 2vw;
+    }
+  }
 
   .splide__slide {
   border-radius: $radius-m;

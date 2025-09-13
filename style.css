@@ -554,6 +554,9 @@ section.projects h3 {
 }
 
 @media (max-width: 480px) {
+  .projects h3 {
+    padding-bottom: 2vw;
+  }
   .splide__slide {
     border-radius: 10vw;
     height: 64vw !important;
