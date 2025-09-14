@@ -53,7 +53,7 @@
     background-color: $purple;
     
     position: fixed;
-    z-index: 9998;
+    z-index: 99971;
     
 
 }
@@ -67,7 +67,13 @@
 
 .menu-cols {
     display: flex;
+    position: relative;
+    z-index: 9999;
 
+}
+
+.menu-link {
+    z-index: 9999;
 }
 
 .menu-cols > div {

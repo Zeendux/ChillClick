@@ -59,6 +59,11 @@ const burger = document.querySelector(".burger-button");
 
 const logo = document.querySelector(".logo");
 
+const navLink = document.querySelectorAll(".menu-link");
+
+
+
+// gsap timeline
 document.addEventListener("DOMContentLoaded", () => {
   let tl = gsap.timeline({paused: true});
 
@@ -72,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: .2,
     ease: "power2.out",
     opacity: 0,
-  }, 0)
+  }, 0);
 
 
 
@@ -82,11 +87,12 @@ burger.addEventListener("click", () => {
     
 
     if (!burger.classList.contains("burger-active")) {
-        burger.classList.add("burger-active") // Добавить класс active, если он не содержится в списке классов
+        burger.classList.toggle('burger-active'); // Добавить класс active, если он не содержится в списке классов
       tl.play()
+    
 
     } else {
-        burger.classList.remove("burger-active") // Удалить класс active, если содержится в списке классов
+        burger.classList.toggle('burger-active'); // Удалить класс active, если содержится в списке классов
         tl.reverse()
       }
 });
@@ -95,8 +101,29 @@ burger.addEventListener("click", () => {
 
 
 
+
+navLink.forEach(link => {
+  link.addEventListener("click", () => {
+    console.log("clicked")
+    tl.reverse()
+
+    if (!burger.classList.contains("burger-active")) {
+        burger.classList.toggle('burger-active'); // Добавить класс active, если он не содержится в списке классов
+      tl.play()
+    
+
+    } else {
+        burger.classList.toggle('burger-active'); // Удалить класс active, если содержится в списке классов
+        tl.reverse()
+      }
+  })
+});
+
+
+
 // DOMloaded
 });
+
 
 
 

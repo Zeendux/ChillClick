@@ -70,7 +70,7 @@ body {
   padding: 3vw;
   background-color: #6f00ff;
   position: fixed;
-  z-index: 9998;
+  z-index: 99971;
 }
 
 .menu-close-btn {
@@ -79,6 +79,12 @@ body {
 
 .menu-cols {
   display: flex;
+  position: relative;
+  z-index: 9999;
+}
+
+.menu-link {
+  z-index: 9999;
 }
 
 .menu-cols > div {
@@ -97,7 +103,7 @@ body {
 }
 
 header {
-  z-index: 9999;
+  z-index: 9998;
   position: fixed;
   width: 100%;
 }
